@@ -54,6 +54,11 @@ ROBOTSTXT_OBEY = True
 #    'steamcrawler.middlewares.SteamcrawlerDownloaderMiddleware': 543,
 #}
 
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy_beautifulsoup.middleware.BeautifulSoupMiddleware': 543
+}
+BEAUTIFULSOUP_PARSER = "html5lib" 
+
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {
