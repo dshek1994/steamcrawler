@@ -2,7 +2,7 @@ import scrapy
 
 class SteamSpider(scrapy.Spider):
     name = "profiles"
-    start_url = [
+    start_urls = [
         'https://steamcommunity.com/id/dsdude233max/',
     ]
 
